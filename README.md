@@ -20,3 +20,21 @@ The full implementation will be released after the associated paper is accepted.
 | YOLO26 |	90.10 | 57.90 | 80.80 | 87.80 | 720 | 2.38 |
 | RT-DETR |	88.50 | 55.00 | 77.20 | 92.00 | 63 | 76.96 |
 | ACG-YOLO | 93.30 | 59.90 | 84.70 | 93.60 | 742 | 2.57 |
+
+# Pre-requisties
+· Windows
+· Python >= 3.10
+· CUDA == 12.1
+· PyTorch >= 2.0
+
+# Getting started to evluate
+# Dataset
+1.GDXray:The source of the GDXray dataset can be found at this link; 
+
+2.Al-cast:The source of the Al-Cast dataset can be found at this link.
+
+# Train
+This command trains ACG-YOLO on the GDXray dataset with an input size of 640 × 640, a batch size of 32, and 300 training epochs.
+```
+yolo detect train model=ACG-YOLO.yaml data=GDXray.yaml imgsz=640 batch=32 epochs=300 device=0
+```
