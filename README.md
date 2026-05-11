@@ -74,7 +74,6 @@ The main training settings are listed below:
 * Optimizer: SGD
 * Initial Learning Rate: 0.01
 * Momentum: 0.937
-* Dataset Split: 7:2:1 for training, validation, and testing
 
 ---
 
@@ -89,12 +88,4 @@ from ultralytics import YOLO
 model = YOLO("ultralytics/cfg/models/v12/ACG-YOLO.yaml")
 
 # Start training
-model.train(
-    data="your_dataset.yaml",
-    epochs=300,
-    imgsz=640,
-    batch=32,
-    optimizer="SGD",
-    lr0=0.01,
-    momentum=0.937
-)
+model.train(data="your_dataset.yaml",epochs=300,imgsz=640,batch=32,)
