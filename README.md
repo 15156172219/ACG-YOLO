@@ -40,24 +40,6 @@ Experimental results on the **GDXray** dataset show that ACG-YOLO achieves a fav
 
 ---
 
-### Cross-Dataset Validation on the Al-Cast Dataset
-
-To further evaluate the adaptability of ACG-YOLO on an independent external dataset, supplementary experiments were conducted on the **Al-Cast** dataset.
-
-| Model | Class | mAP50 (%) ↑ | mAP50-95 (%) ↑ | Recall (%) ↑ | Precision (%) ↑ |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| YOLOv8 | All | 97.6 | 53.4 | 96.1 | 98.3 |
-| YOLOv10 | All | 97.5 | 53.6 | 93.6 | 97.1 |
-| YOLO11 | All | 97.8 | 53.4 | 95.9 | 97.7 |
-| YOLOv12 | All | 96.9 | 51.8 | 93.9 | 96.2 |
-| YOLOv13 | All | 97.1 | 52.2 | 94.5 | 97.2 |
-| YOLO26 | All | 97.9 | 51.6 | 96.7 | 97.5 |
-| **ACG-YOLO (Ours)** | **All** | **98.5** | **53.7** | 95.6 | 95.3 |
-| **ACG-YOLO (Ours)** | **Shrinkage** | **97.9** | **52.8** | 95.0 | 94.2 |
-| **ACG-YOLO (Ours)** | **Gas hole** | **99.0** | 54.6 | 96.2 | 96.5 |
-
----
-
 ## 🗂️ Datasets
 
 ### GDXray Dataset
